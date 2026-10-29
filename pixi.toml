@@ -1,5 +1,5 @@
 [workspace]
-authors = ["niklascam <n_schmitz1@gmx.de>"]
+authors = ["niklascam <ns751@cam.ac.uk>"]
 channels = ["conda-forge"]
 name = "nba"
 platforms = ["osx-arm64", "osx-64", "linux-64", "win-64"]
