@@ -2,32 +2,36 @@
 
 # Setup
 
-## Envrionment
+## Environment
 
-Install the required packages by running:
+This project uses [Pixi](https://pixi.sh) for the environment. Install Pixi if you
+do not have it yet, then from the repository root run:
 
 ```bash
-conda env create -f environment.yml
+pixi install
 ```
 
 Activate the environment by running:
 
 ```bash
-conda activate solution_ps2_ex3_database
+pixi shell
 ```
+
+You can also run commands without activating the shell, for example
+`pixi run python nba/data_loader.py ...`.
 
 ## Pre-commit
 
 This repository uses pre-commit to run some checks before each commit. To install pre-commit, run:
 
 ```bash
-pre-commit install
+pixi run pre-commit install
 ```
 
 To run the checks manually, run:
 
 ```bash
-pre-commit run --all-files
+pixi run pre-commit run --all-files
 ```
 
 # Getting the data
@@ -44,7 +48,7 @@ download the data with by running the script from the terminal. Run the followin
 terminal being at the root of the repository.
 
 ```bash
-python nba/data_loader.py -u "your_user_name" -k "your_api_key" -d "wyattowalsh/basketball"
+pixi run python nba/data_loader.py -u "your_user_name" -k "your_api_key" -d "wyattowalsh/basketball"
 ```
 
 Replace "your_user_name" and "your_api_key" with your username and API key. This creates a json

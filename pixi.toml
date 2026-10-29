@@ -1,0 +1,20 @@
+[workspace]
+authors = ["niklascam <n_schmitz1@gmx.de>"]
+channels = ["conda-forge"]
+name = "nba"
+platforms = ["osx-arm64", "osx-64", "linux-64", "win-64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
+python = "3.12.*"
+polars = "*"
+pandas = "*"
+duckdb = "*"
+kaggle = "*"
+sqlite = "*"
+seaborn = "*"
+pre-commit = "*"
+ipykernel = "*"
+click = "*"
