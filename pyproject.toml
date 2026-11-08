@@ -13,6 +13,7 @@ dependencies = [
     "click",
     "duckdb",
     "kaggle",
+    "matplotlib",
     "pandas",
     "polars",
     "seaborn",
